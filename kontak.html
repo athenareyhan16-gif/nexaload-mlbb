@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak Kami - NexaLoad MLBB</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #0b1120; color: #e2e8f0; }
+        
+        /* HEADER DENGAN BACKGROUND FOTO LAYLA */
+        header { 
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.6), rgba(30, 27, 75, 0.8)), url('Layla Nexus Sea 11_11.jpeg'); 
+            background-size: cover; 
+            background-position: center 25%; 
+            min-height: 180px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #fbbf24; 
+            padding: 20px; 
+            text-align: center; 
+        }
+        header h1 { color: #fbbf24; font-size: 2rem; letter-spacing: 2px; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
+        
+        /* NAVIGASI MENU */
+        nav { background-color: rgba(15, 23, 42, 0.9); border-bottom: 1px solid #1e293b; display: flex; justify-content: center; }
+        nav a { padding: 15px 25px; font-weight: 600; color: #94a3b8; text-decoration: none; }
+        nav a:hover, nav a.active { color: #fbbf24; background-color: #1e293b; border-bottom: 3px solid #fbbf24; }
+        
+        /* KONTEN UTAMA BIODATA */
+        .kontak-container { 
+            max-width: 800px; 
+            margin: 40px auto; 
+            background-color: rgba(15, 23, 42, 0.8); 
+            border: 1px solid #334155; 
+            border-radius: 12px; 
+            padding: 40px; 
+            backdrop-filter: blur(4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .kontak-container h2 { 
+            color: #fbbf24; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+        
+        /* TATA LETAK PROFIL (FOTO KIRI, BIODATA KANAN) */
+        .profil-wrapper { 
+            display: flex; 
+            gap: 40px; 
+            flex-wrap: wrap; 
+            align-items: center;
+        }
+        
+        /* BAGIAN FOTO MAHASISWA */
+        .foto-box { 
+            flex: 1; 
+            min-width: 220px; 
+            text-align: center; 
+        }
+        .foto-box img { 
+            width: 200px; 
+            height: 250px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            border: 3px solid #fbbf24; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .foto-box p {
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: #94a3b8;
+            font-style: italic;
+        }
+        
+        /* BAGIAN TABEL BIODATA (KANAN) */
+        .biodata-box { 
+            flex: 2; 
+            min-width: 300px; 
+        }
+        
+        .biodata-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 10px;
+        }
+        .biodata-table td { 
+            padding: 12px 8px; 
+            font-size: 1rem; 
+            border-bottom: 1px solid #1e293b;
+        }
+        .biodata-table td.label { 
+            font-weight: 600; 
+            color: #fbbf24; 
+            width: 35%;
+        }
+        .biodata-table td.value { 
+            color: #f1f5f9; 
+        }
+        
+        /* SOSIAL MEDIA BADGES */
+        .sosmed-container {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .sosmed-badge {
+            background-color: #1e293b;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            border: 1px solid #334155;
+        }
+        
+        footer { background-color: #0f172a; border-top: 1px solid #1e293b; color: #64748b; text-align: center; padding: 20px; font-size: 0.85rem; margin-top: 100px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NEXALOAD MLBB</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Katalog MLBB</a>
+        <a href="detail.html">Detail</a>
+        <a href="transaksi.html">Transaksi</a>
+        <a href="kontak.html" class="active">Kontak</a>
+        <a href="tentang.html">Tendang</a>
+    </nav>
+    
+    <div class="kontak-container">
+        <h2>Developer Profile & Customer Service</h2>
+        
+        <div class="profil-wrapper">
+            <!-- SISI KIRI: FOTO ANDA -->
+            <div class="foto-box">
+                
+                <img src="foto.jpeg" alt="Foto Athena">
+                <p>Web Developer & Founder</p>
+            </div>
+            
+            
+            <div class="biodata-box">
+                <table class="biodata-table">
+                    <tr>
+                        <td class="label">Nama Lengkap</td>
+                        <td class="value">Athena Reyhan</td>
+                    </tr>
+                    <tr>
+                        <td class="label">NIM</td>
+                        <td class="value">10525158 </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Kelas</td>
+                        <td class="value">IS-2 </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Program Studi</td>
+                        <td class="value">Sistem Informasi</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Kampus</td>
+                        <td class="value">Universitas Komputer Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Email Resmi</td>
+                        <td class="value">athena.10525158@mahasiswa.unikom.ac.id</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Layanan CS</td>
+                        <td class="value">athenareyhan16@gmail.com (24/7 Fast Response)</td>
+                    </tr>
+                </table>
+                <div class="sosmed-container">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>&copy; 2026 NexaLoad MLBB by Athena</footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Produk - NexaLoad MLBB</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #0b1120; color: #e2e8f0; }
+        
+        /* HEADER DENGAN BACKGROUND FOTO LAYLA */
+        header { 
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.6), rgba(30, 27, 75, 0.8)), url('Layla Nexus Sea 11_11.jpeg'); 
+            background-size: cover; 
+            background-position: center 25%; 
+            min-height: 180px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #fbbf24; 
+            padding: 20px; 
+            text-align: center; 
+        }
+        header h1 { color: #fbbf24; font-size: 2rem; letter-spacing: 2px; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
+        
+        /* NAVIGASI MENU */
+        nav { background-color: rgba(15, 23, 42, 0.9); border-bottom: 1px solid #1e293b; display: flex; justify-content: center; }
+        nav a { padding: 15px 25px; font-weight: 600; color: #94a3b8; text-decoration: none; }
+        nav a:hover, nav a.active { color: #fbbf24; background-color: #1e293b; border-bottom: 3px solid #fbbf24; }
+        
+        /* TATA LETAK UTAMA (GAMBAR KIRI, DETAIL KANAN) */
+        .detail-wrapper { 
+            display: flex; 
+            max-width: 1000px; 
+            margin: 40px auto; 
+            padding: 20px; 
+            gap: 30px; 
+            flex-wrap: wrap;
+        }
+        
+        /* KOTAK GAMBAR (KIRI) - DISESUAIKAN */
+        .product-image-box { 
+            flex: 1; 
+            min-width: 300px; 
+            background-color: rgba(15, 23, 42, 0.8); 
+            border: 1px solid #334155; 
+            border-radius: 8px; 
+            padding: 0; /* Diubah menjadi 0 supaya gambar mepet sampai ke ujung kotak */
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            backdrop-filter: blur(4px);
+            overflow: hidden; /* Memastikan ujung gambar melengkung mengikuti border-radius kotak */
+        }
+        
+        /* UKURAN GAMBAR DIGEDEIN */
+        .product-image-box img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; /* Membuat gambar memenuhi seluruh kotak dengan rapi tanpa ditarik/gepeng */
+        }
+        
+        /* KOTAK FORM DETAIL & PEMBELIAN (KANAN) */
+        .product-info-box { 
+            flex: 1.5; 
+            min-width: 320px; 
+            background-color: rgba(15, 23, 42, 0.8); 
+            border: 1px solid #334155; 
+            border-radius: 8px; 
+            padding: 30px; 
+            backdrop-filter: blur(4px);
+        }
+        
+        .product-info-box h2 { color: #fbbf24; font-size: 1.8rem; margin-bottom: 5px; }
+        .product-info-box .sub-title { color: #94a3b8; font-size: 0.9rem; margin-bottom: 20px; }
+        
+        /* ANALISIS INPUTAN FORM */
+        .form-group { margin-bottom: 18px; }
+        .form-group label { display: block; margin-bottom: 6px; font-size: 0.9rem; color: #cbd5e1; font-weight: 600; }
+        
+        /* Input ID Row (Membagi User ID dan Zone ID berdampingan) */
+        .id-row { display: flex; gap: 10px; }
+        .id-row input[type="number"] { flex: 2; }
+        .id-row input[type="number"].zone { flex: 1; }
+        
+        .form-group input[type="text"], 
+        .form-group input[type="number"], 
+        .form-group select { 
+            width: 100%; 
+            padding: 12px; 
+            background-color: #1e293b; 
+            border: 1px solid #334155; 
+            border-radius: 4px; 
+            color: #fff; 
+            font-size: 0.95rem;
+        }
+        .form-group input:focus, .form-group select:focus { border-color: #fbbf24; outline: none; }
+        
+        /* TOMBOL BELI */
+        .btn-submit { 
+            display: block; 
+            width: 100%; 
+            padding: 14px; 
+            background-color: #fbbf24; 
+            color: #0f172a; 
+            font-weight: bold; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-size: 1rem; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.2s;
+        }
+        .btn-submit:hover { background-color: #f59e0b; }
+        
+        footer { background-color: #0f172a; border-top: 1px solid #1e293b; color: #64748b; text-align: center; padding: 20px; font-size: 0.85rem; margin-top: 60px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NEXALOAD MLBB</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Katalog MLBB</a>
+        <a href="detail.html" class="active">Detail</a>
+        <a href="transaksi.html">Transaksi</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="tentang.html">Tentang</a> </nav>
+    
+    <div class="detail-wrapper">
+        <div class="product-image-box">
+            <img src="layla.jpeg" alt="Logo Diamond MLBB">
+        </div>
+        
+        <div class="product-info-box">
+            <h2>Mobile Legends Bang Bang</h2>
+            <div class="sub-title">Top Up otomatis masuk 24 jam legal 100% resmi Moonton</div>
+            
+            <form action="transaksi.html" method="GET">
+                
+                <div class="form-group">
+                    <label>Data Akun MLBB</label>
+                    <div class="id-row">
+                        <input type="number" placeholder="Masukkan User ID" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxLength="10">
+                        <input type="number" class="zone" placeholder="(Zone)" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxLength="5">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Pilih Nominal Diamonds</label>
+                    <select required>
+                        <option value="">-- Silakan Pilih Variasi --</option>
+                        <option>86 Diamonds - Rp 20.500</option>
+                        <option>172 Diamonds - Rp 41.000</option>
+                        <option>257 Diamonds - Rp 61.500</option>
+                        <option>Weekly Diamond Pass - Rp 28.500</option>
+                        <option>706 Diamonds - Rp 165.000</option>
+                        <option>1050 Diamonds - Rp 245.000</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Metode Pembayaran</label>
+                    <select required>
+                        <option value="">-- Pilih Metode Pembayaran --</option>
+                        <option>QRIS (Konfirmasi Instan)</option>
+                        <option>DANA</option>
+                        <option>OVO</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Nomor WhatsApp (Untuk Invoice)</label>
+                    <input type="text" placeholder="Contoh: 081234567xxx" required>
+                </div>
+                
+                <button type="submit" class="btn-submit">Beli Sekarang</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer>&copy; 2026 NexaLoad MLBB by Athena</footer>
+</body>
+</html>

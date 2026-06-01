@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>NexaLoad - Mobile Legends Store</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+        
+        body { 
+            background-color: #0b1120; 
+            color: #e2e8f0; 
+        }
+        
+        a { text-decoration: none; color: inherit; }
+        
+        header { 
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.6), rgba(30, 27, 75, 0.8)), url('Layla Nexus Sea 11_11.jpeg'); 
+            background-size: cover; 
+            background-position: center 25%; 
+            min-height: 200px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #fbbf24; 
+            padding: 20px; 
+            text-align: center; 
+        }
+        header h1 { color: #fbbf24; font-size: 2.2rem; letter-spacing: 2px; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); }
+        header p { color: #cbd5e1; font-size: 0.9rem; margin-top: 5px; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); }
+        
+        .marquee-box { background: #fbbf24; color: #0f172a; font-weight: bold; font-size: 0.85rem; padding: 6px 0; }
+        
+        nav { background-color: rgba(15, 23, 42, 0.9); border-bottom: 1px solid #1e293b; display: flex; justify-content: center; }
+        nav a { padding: 15px 25px; font-weight: 600; color: #94a3b8; }
+        nav a:hover, nav a.active { color: #fbbf24; background-color: #1e293b; border-bottom: 3px solid #fbbf24; }
+        
+        .main-wrapper { display: flex; flex-wrap: wrap; min-height: 75vh; }
+        aside.sidebar-left { flex: 1; min-width: 200px; background-color: rgba(15, 23, 42, 0.75); padding: 20px; border-right: 1px solid #1e293b; }
+        aside.sidebar-right { flex: 1; min-width: 200px; background-color: rgba(15, 23, 42, 0.75); padding: 20px; border-left: 1px solid #1e293b; }
+        .sidebar-title { font-size: 0.95rem; color: #fbbf24; margin-bottom: 15px; border-left: 4px solid #fbbf24; padding-left: 8px; }
+        
+        main.content-area { flex: 3; min-width: 320px; background-color: rgba(11, 17, 32, 0.6); padding: 30px; backdrop-filter: blur(4px); }
+        
+        .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
+        .product-card { background-color: #1e293b; border: 1px solid #334155; border-radius: 8px; padding: 20px; text-align: center; transition: 0.3s; }
+        .product-card:hover { border-color: #fbbf24; transform: scale(1.02); }
+        
+        
+        .product-card img { width: 100%; max-width: 85px; height: auto; margin-bottom: 12px; object-fit: contain; }
+        .product-card h4 { font-size: 0.9rem; color: #f8fafc; margin-bottom: 8px; }
+        .product-card .price { color: #fbbf24; font-weight: bold; margin-bottom: 15px; }
+        
+        .btn-beli { display: block; padding: 10px; background-color: #fbbf24; color: #0f172a; font-weight: bold; border-radius: 4px; }
+        .btn-beli:hover { background-color: #f59e0b; }
+        
+        footer { background-color: #0f172a; border-top: 1px solid #1e293b; color: #64748b; text-align: center; padding: 20px; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NEXALOAD MLBB</h1>
+        <p>UTS KATI - Mahasiswa: Athena | Dosen: Syahrul Mauluddin, S.Kom, M.Kom</p>
+    </header>
+    <div class="marquee-box">
+        <marquee>💎 TOP UP DIAMOND MOBILE LEGENDS FAST RESPON - OPEN 24 JAM 💎</marquee>
+    </div>
+    <nav>
+        <a href="index.html" class="active">Katalog MLBB</a>
+        <a href="detail.html">Detail</a>
+        <a href="transaksi.html">Transaksi</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="tentang.html">Tentang</a>
+    </nav>
+    <div class="main-wrapper">
+        <aside class="sidebar-left">
+            <h3 class="sidebar-title">Promo Hari Ini</h3>
+            <a href="detail.html">
+                <img src="download (1).jpeg" alt="Starlight Promo" style="width:100%; border-radius:6px; border: 1px solid #fbbf24;">
+            </a>
+        </aside>
+        
+        <main class="content-area">
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="dmml.png" alt="Diamonds">
+                    <h4>86 Diamonds MLBB</h4>
+                    <div class="price">Rp 20.500</div>
+                    <a href="detail.html" class="btn-beli">Beli</a>
+                </div>
+                <div class="product-card">
+                    <img src="dmml.png" alt="Diamonds">
+                    <h4>172 Diamonds MLBB</h4>
+                    <div class="price">Rp 41.000</div>
+                    <a href="detail.html" class="btn-beli">Beli</a>
+                </div>
+                <div class="product-card">
+                    <img src="dmml.png" alt="Diamonds">
+                    <h4>257 Diamonds MLBB</h4>
+                    <div class="price">Rp 61.500</div>
+                    <a href="detail.html" class="btn-beli">Beli</a>
+                </div>
+                <div class="product-card">
+                    <img src="wdp.png" alt="Weekly Pass">
+                    <h4>Weekly Diamond Pass</h4>
+                    <div class="price">Rp 28.500</div>
+                    <a href="detail.html" class="btn-beli">Beli</a>
+                </div>
+                <div class="product-card">
+                    <img src="1k.png" alt="Diamonds">
+                    <h4>706 Diamonds MLBB</h4>
+                    <div class="price">Rp 165.000</div>
+                    <a href="detail.html" class="btn-beli">Beli</a>
+                </div>
+                <div class="product-card">
+                    <img src="1k.png" alt="Diamonds">
+                    <h4>1050 Diamonds MLBB</h4>
+                    <div class="price">Rp 245.000</div>
+                    <a href="detail.html" class="btn-beli">Beli</a>
+                </div>
+                <div class="product-card">
+                    <img src="2k.png" alt="Diamonds">
+                    <h4>2195 Diamonds MLBB</h4>
+                    <div class="price">Rp 510.000</div>
+                    <a href="detail.html" class="btn-beli">Beli</a>
+                </div>
+                <div class="product-card">
+                    <img src="2k.png" alt="Diamonds">
+                    <h4>3688 Diamonds MLBB</h4>
+                    <div class="price">Rp 850.000</div>
+                    <a href="detail.html" class="btn-beli">Beli</a>
+                </div>
+                <div class="product-card">
+                    <img src="2k.png" alt="Diamonds">
+                    <h4>9288 Diamonds MLBB</h4>
+                    <div class="price">Rp 2.100.000</div>
+                    <a href="detail.html" class="btn-beli">Beli</a>
+                </div>
+            </div>
+        </main>
+        
+        <aside class="sidebar-right">
+            <h3 class="sidebar-title">Metode Bayar</h3>
+            <p style="font-size:0.8rem; line-height: 1.5;">DANA, OVO, QRIS otomatis via konfirmasi instan.</p>
+        </aside>
+    </div>
+    <footer>&copy; 2026 NexaLoad MLBB by Athena</footer>
+</body>
+</html>
